@@ -19,7 +19,7 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: var(--dark-bg); color: var(--text-light); font-family: 'Montserrat', sans-serif; line-height: 1.6; overflow-x: hidden; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+        body { background-color: var(--dark-bg); color: var(--text-light); font-family: 'Montserrat', sans-serif; line-height: 1.6; overflow-x: hidden; display: flex; flex-direction: column; align-items: center; }
 
         h1, h2, h3, .font-elegant { font-family: 'Cinzel', serif; letter-spacing: 2px; }
 
@@ -80,7 +80,7 @@
         #wedding-site { display: none; width: 100%; }
         #wedding-site.active { display: block; }
 
-        header { position: relative; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(26, 26, 36, 0.7), rgba(26, 26, 36, 0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(212,175,55,0.1)"/></svg>'); background-size: 100px 100px; }
+        header { position: relative; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(26, 26, 26, 0.4), rgba(26,26,26,0.6)); }
         .game-badge { font-size: 0.85rem; text-transform: uppercase; border: 1px solid var(--primary-gold); padding: 5px 15px; border-radius: 20px; color: var(--primary-gold); margin-bottom: 20px; }
         @keyframes pulse { 0% { opacity: 0.6; transform: scale(0.98); } 50% { opacity: 1; transform: scale(1); } 100% { opacity: 0.6; transform: scale(0.98); } }
         header h1 { font-size: 3.5rem; margin-bottom: 10px; color: #fff; text-shadow: 0 0 10px rgba(212, 175, 55, 0.3); }
@@ -92,7 +92,7 @@
         .section-title::after { content: '❖'; display: block; font-size: 1rem; color: rgba(214, 175, 55, 0.5); margin-top: 10px; }
 
         .character-select { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; }
-        .player-card { background: var(--card-bg); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; width: 45%; min-width: 300px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: all 0.3s ease; }
+        .player-card { background: var(--card-bg); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; width: 45%; min-width: 300px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
         .player-card:hover { transform: translateY(-5px); border-color: var(--primary-gold); }
         .player-img-placeholder { width: 100%; height: 350px; background: #2c2c3d; display: flex; justify-content: center; align-items: center; font-style: italic; border-bottom: 3px solid var(--primary-gold); }
         .player-img-placeholder img { width: 100%; height: 100%; object-fit: cover; }
@@ -105,11 +105,11 @@
         @media (max-width: 768px) { .quest-log { grid-template-columns: 1fr; } .player-card { width: 100%; min-width: unset; } }
         .quest-card { background: var(--card-bg); border-left: 4px solid var(--primary-gold); padding: 40px; border-radius: 0 12px 12px 0; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
         .quest-card h3 { font-size: 1.4rem; margin-bottom: 10px; color: #fff; }
-        .time-badge { display: inline-block; background: rgba(214, 175, 55, 0.15); color: var(--primary-gold); padding: 4px 12px; font-size: 0.85rem; border-radius: 4px; margin-bottom: 20px; font-weight: 600; }
+        .time-badge { display: inline-block; background: rgba(214, 175, 55, 0.15); color: var(--primary-gold); padding: 4px 12px; font-size: 0.85rem; border-radius: 4px; margin-bottom: 20px; }
         .quest-card p { color: var(--text-muted); margin-bottom: 15px; font-size: 0.95rem; }
         .address { font-style: normal; color: var(--text-light); font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
         
-        .menu-btn { display: inline-block; background: transparent; border: 2px solid var(--primary-gold); color: #fff; padding: 12px 30px; font-family: 'Cinzel', serif; font-size: 0.9rem; letter-spacing: 1px; cursor: pointer; transition: all 0.3s ease; border-radius: 4px; }
+        .menu-btn { display: inline-block; background: transparent; border: 2px solid var(--primary-gold); color: #fff; padding: 12px 30px; font-family: 'Cinzel', serif; font-size: 0.9rem; letter-spacing: 1px; }
         .menu-btn:hover { background: var(--primary-gold); color: var(--dark-bg); box-shadow: 0 0 15px rgba(214, 175, 55, 0.4); }
 
         footer { background: #111118; padding: 60px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); }
@@ -151,10 +151,10 @@
             <h1>Vho & Gica</h1>
             <div class="subtitle">Are Ready for Player 2</div>
             <div class="countdown-container" style="display:flex; gap:20px; background:rgba(255,255,255,0.03); padding:15px 30px; border-radius:8px; border:1px solid rgba(214, 175, 55, 0.2);">
-                <div class="countdown-item" style="text-align:center;"><span style="display:block; font-size:2rem; font-weight:bold; color:var(--primary-gold); font-family:'Cinzel', serif;" id="days">00</span><span style="font-size:0.8rem;">Days</span></div>
-                <div class="countdown-item" style="text-align:center;"><span style="display:block; font-size:2rem; font-weight:bold; color:var(--primary-gold); font-family:'Cinzel', serif;" id="hours">00</span><span style="font-size:0.8rem;">Hours</span></div>
-                <div class="countdown-item" style="text-align:center;"><span style="display:block; font-size:2rem; font-weight:bold; color:var(--primary-gold); font-family:'Cinzel', serif;" id="minutes">00</span><span style="font-size:0.8rem;">Minutes</span></div>
-                <div class="countdown-item" style="text-align:center;"><span style="display:block; font-size:2rem; font-weight:bold; color:var(--primary-gold); font-family:'Cinzel', serif;" id="seconds">00</span><span style="font-size:0.8rem;">Seconds</span></div>
+                <div class="countdown-item" style="text-align:center;"><span style="display:block; font-size:2rem; font-weight:bold; color:var(--primary-gold); font-family:'Cinzel', serif;" id="days"></span></div>
+                <div class="countdown-item" style="text-align:center;"><span style="display:block; font-size:2rem; font-weight:bold; color:var(--primary-gold); font-family:'Cinzel', serif;" id="hours"></span></div>
+                <div class="countdown-item" style="text-align:center;"><span style="display:block; font-size:2rem; font-weight:bold; color:var(--primary-gold); font-family:'Cinzel', serif;" id="minutes"></span></div>
+                <div class="countdown-item" style="text-align:center;"><span style="display:block; font-size:2rem; font-weight:bold; color:var(--primary-gold); font-family:'Cinzel', serif;" id="seconds"></span></div>
             </div>
         </header>
 
@@ -210,6 +210,8 @@
         </footer>
     </div>
 
+    <script src="src/sprites/rowAtlas.js"></script>
+
     <script>
         const weddingDate = new Date("Feb 7, 2027 00:00:00").getTime();
         const timer = setInterval(function() {
@@ -234,6 +236,63 @@
         const gicaSprite = new Image();
         gicaSprite.src = 'Images/Gica/gicasprite.png';
 
+        // Friendly frame-name arrays (match left-to-right, top-to-bottom)
+        const femaleFrameNames = [
+          // idle / blink / adjust strap (row 0)
+          "frame_idle_0","frame_idle_1","frame_blink_0","frame_blink_1","frame_adjust_strap_0","frame_adjust_strap_1",
+          // walk (row 1)
+          "frame_walk_0","frame_walk_1","frame_walk_2","frame_walk_3","frame_walk_4","frame_walk_5","frame_walk_6","frame_walk_7",
+          // run (row 2)
+          "frame_run_0","frame_run_1","frame_run_2","frame_run_3","frame_run_4","frame_run_5","frame_run_6","frame_run_7",
+          // jump row (row 3)
+          "frame_jump_rise","frame_jump_peak","frame_jump_fall","frame_duck","frame_hurt","frame_special_balloon_release","frame_cake_heal",
+          // UI (row 4)
+          "ui_life_icon","ui_cake_powerup","ui_balloon_count"
+        ];
+
+        const maleFrameNames = [
+          // idle / blink / adjust belt (row 0)
+          "frame_idle_0","frame_idle_1","frame_blink_0","frame_blink_1","frame_adjust_belt_0","frame_adjust_belt_1",
+          // walk (row 1)
+          "frame_walk_0","frame_walk_1","frame_walk_2","frame_walk_3","frame_walk_4","frame_walk_5","frame_walk_6","frame_walk_7",
+          // run (row 2)
+          "frame_run_0","frame_run_1","frame_run_2","frame_run_3","frame_run_4","frame_run_5","frame_run_6","frame_run_7",
+          // jump row (row 3)
+          "frame_jump_rise","frame_jump_peak","frame_jump_fall","frame_duck","frame_hurt","frame_special_gesture","frame_achievement",
+          // UI (row 4)
+          "ui_life_icon","ui_belt_powerup","ui_confidence_meter"
+        ];
+
+        // atlas & player variables
+        let vhoAtlas = null, gicaAtlas = null;
+        let vhoIdlePlayer, vhoWalkPlayer, vhoRunPlayer, vhoJumpPlayer;
+        let gicaIdlePlayer, gicaWalkPlayer, gicaRunPlayer, gicaJumpPlayer;
+
+        function setupAtlases() {
+          const cols = 8; // matches the sprite sheet layout
+          try {
+            vhoAtlas = buildGridAtlas(vhoSprite, cols, null, femaleFrameNames);
+            vhoIdlePlayer = makeAnimationPlayer(vhoAtlas, vhoAtlas.getFramesByRow(0,0,6), 300, true);
+            vhoWalkPlayer = makeAnimationPlayer(vhoAtlas, vhoAtlas.getFramesByRow(1,0,8), 90, true);
+            vhoRunPlayer  = makeAnimationPlayer(vhoAtlas, vhoAtlas.getFramesByRow(2,0,8), 70, true);
+            vhoJumpPlayer = makeAnimationPlayer(vhoAtlas, vhoAtlas.getFramesByRow(3,0,7), 100, false);
+          } catch (e) { console.warn('Vho atlas setup failed:', e); }
+
+          try {
+            gicaAtlas = buildGridAtlas(gicaSprite, cols, null, maleFrameNames);
+            gicaIdlePlayer = makeAnimationPlayer(gicaAtlas, gicaAtlas.getFramesByRow(0,0,6), 300, true);
+            gicaWalkPlayer = makeAnimationPlayer(gicaAtlas, gicaAtlas.getFramesByRow(1,0,8), 90, true);
+            gicaRunPlayer  = makeAnimationPlayer(gicaAtlas, gicaAtlas.getFramesByRow(2,0,8), 70, true);
+            gicaJumpPlayer = makeAnimationPlayer(gicaAtlas, gicaAtlas.getFramesByRow(3,0,7), 100, false);
+          } catch (e) { console.warn('Gica atlas setup failed:', e); }
+        }
+
+        if (vhoSprite.complete && gicaSprite.complete) setupAtlases();
+        else {
+          vhoSprite.onload = vhoSprite.onerror = () => { if (gicaSprite.complete) setupAtlases(); };
+          gicaSprite.onload = gicaSprite.onerror = () => { if (vhoSprite.complete) setupAtlases(); };
+        }
+
         let keys = {};
         let gameWin = false;
         let gameRunning = true;
@@ -246,9 +305,18 @@
             speed: 3, jumpPower: -8, gravity: 0.5, grounded: false,
             hasRing: false,
             draw() {
-                if (vhoSprite.complete) {
+                // pick animation: running > walking > idle
+                let anim = null;
+                if (Math.abs(this.vx) > this.speed) anim = vhoRunPlayer;
+                else if (Math.abs(this.vx) > 0.1) anim = vhoWalkPlayer;
+                else anim = vhoIdlePlayer;
+
+                if (anim) {
+                    anim.draw(ctx, this.x, this.y, this.w, this.h);
+                } else if (vhoSprite.complete) {
                     ctx.drawImage(vhoSprite, this.x, this.y, this.w, this.h);
                 }
+
                 if(this.hasRing){
                     ctx.fillStyle = '#FFD700';
                     ctx.beginPath();
@@ -266,9 +334,9 @@
         const girlfriend = {
             x: 730, y: 310, w: 50, h: 70,
             draw() {
-                if (gicaSprite.complete) {
-                    ctx.drawImage(gicaSprite, this.x, this.y, this.w, this.h);
-                }
+                const anim = gicaIdlePlayer || gicaWalkPlayer;
+                if (anim) anim.draw(ctx, this.x, this.y, this.w, this.h);
+                else if (gicaSprite.complete) ctx.drawImage(gicaSprite, this.x, this.y, this.w, this.h);
             }
         };
 
@@ -313,6 +381,8 @@
             }
         }
 
+        // timing for game loop and delta
+        let lastTs = performance.now();
         function update() {
             if(!gameRunning || gameWin) return;
 
@@ -398,28 +468,36 @@
             player.draw();
         }
 
-        function gameLoop() {
-            if(gameWin && gameLevel < 4 && canContinue){
-                if((keys['Space'] || keys['Jump'] || keys[' ']) && !spacePressedOnce) {
-                    spacePressedOnce = true;
-                    canContinue = false; 
-                    gameLevel++;
-                    gameWin = false;
-                    generateLevel(gameLevel);
-                    statusText.innerText = "Quest: Reach Gica!";
-                    statusText.style.color = "white";
-                    actionPrompt.innerText = "";
-                } 
-                else if(!keys['Space'] && !keys['Jump'] && !keys[' ']) {
-                    spacePressedOnce = false;
-                }
-            } else {
-                spacePressedOnce = false;
-                canContinue = true; 
-            }
-            update();
-            draw();
-            requestAnimationFrame(gameLoop);
+        // game loop with requestAnimationFrame timestamp delta
+        function gameLoop(ts) {
+          const delta = ts - lastTs;
+          lastTs = ts;
+
+          // update atlas players
+          [vhoIdlePlayer, vhoWalkPlayer, vhoRunPlayer, vhoJumpPlayer,
+           gicaIdlePlayer, gicaWalkPlayer, gicaRunPlayer, gicaJumpPlayer].forEach(p => { if (p) p.update(delta); });
+
+          if(gameWin && gameLevel < 4 && canContinue){
+              if((keys['Space'] || keys['Jump'] || keys[' ']) && !spacePressedOnce) {
+                  spacePressedOnce = true;
+                  canContinue = false; 
+                  gameLevel++;
+                  gameWin = false;
+                  generateLevel(gameLevel);
+                  statusText.innerText = "Quest: Reach Gica!";
+                  statusText.style.color = "white";
+                  actionPrompt.innerText = "";
+              } 
+              else if(!keys['Space'] && !keys['Jump'] && !keys[' ']) {
+                  spacePressedOnce = false;
+              }
+          } else {
+              spacePressedOnce = false;
+              canContinue = true; 
+          }
+          update();
+          draw();
+          requestAnimationFrame(gameLoop);
         }
 
         document.addEventListener('keydown', (e) => { 
@@ -456,7 +534,7 @@
         setupTouchButton('btn-jump', 'Jump');
 
         generateLevel(1);
-        gameLoop();
+        requestAnimationFrame(gameLoop);
     </script>
 </body>
 </html>
